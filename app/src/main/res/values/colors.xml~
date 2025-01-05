@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="Federal_blue" hex="03045e" r="3" g="4" b="94" >#03045e</color>
+    <color name="Marian_blue" hex="023e8a" r="2" g="62" b="138" />
+    <color name="Honolulu_Blue" hex="0077b6" r="0" g="119" b="182" />
+    <color name="Blue_Green" hex="0096c7" r="0" g="150" b="199" />
+    <color name="Pacific_cyan" hex="00b4d8" r="0" g="180" b="216" />
+    <color name="Vivid_sky_blue" hex="48cae4" r="72" g="202" b="228" />
+    <color name="Non_Photo_blue" hex="90e0ef" r="144" g="224" b="239" />
+    <color name="Non_Photos_blue" hex="ade8f4" r="173" g="232" b="244" />
+    <color name="Light_cyan" hex="caf0f8" r="202" g="240" b="248" />
+</resources>
