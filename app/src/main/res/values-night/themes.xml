@@ -1,7 +1,38 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.UmberHouse" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
+    <!-- Base application theme for Night Mode (Dark theme). -->
+    <style name="Base.Theme.roomzy" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here if needed -->
+        <!-- Example: -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <!-- AppTheme for Dark Mode (inherits from Material Components) -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary color for Dark mode (used for highlights and toolbar elements) -->
+        <item name="colorPrimary">#BB86FC</item> <!-- Light purple accent color for Dark mode -->
+
+        <!-- Primary variant (darker shade of the primary color) -->
+        <item name="colorPrimaryVariant">#3700B3</item> <!-- Darker purple accent for deeper UI elements -->
+
+        <!-- Text and icon color that appears on the primary color background -->
+        <item name="colorOnPrimary">@android:color/black</item> <!-- Black text/icons on primary background -->
+
+        <!-- Optional: Secondary color for other UI components -->
+        <item name="colorSecondary">#03DAC6</item> <!-- Teal accent color for Dark mode -->
+
+        <!-- Optional: Text and icon color that appears on the secondary color background -->
+        <item name="colorOnSecondary">@android:color/black</item> <!-- Black text/icons on secondary background -->
+
+        <!-- Optional: Background color for the app in Dark Mode -->
+        <item name="android:windowBackground">@android:color/black</item> <!-- Set the background to black for a dark experience -->
+
+        <!-- Optional: Surface color for elements like cards, sheets, etc. -->
+        <item name="colorSurface">#121212</item> <!-- Dark surface for floating elements -->
+
+        <!-- Optional: Text color on surfaces -->
+        <item name="colorOnSurface">@android:color/white</item> <!-- White text/icons on surface elements -->
+
+        <!-- Optional: Set other customizations for your app, like the status bar color -->
+        <item name="android:statusBarColor">#3700B3</item> <!-- Darker color for the status bar in dark mode -->
     </style>
 </resources>

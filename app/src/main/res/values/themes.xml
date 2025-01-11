@@ -1,8 +1,25 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.UmberHouse" parent="Theme.Material3.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+    <!-- Base application theme for Light Mode. -->
+    <style name="Base.Theme.roomzy" parent="Theme.Material3.Light.NoActionBar">
+        <!-- You can further customize this theme by adding more items like fonts, icon colors, etc. -->
     </style>
 
-    <style name="Theme.UmberHouse" parent="Base.Theme.UmberHouse" />
+    <!-- Light theme (inherits from Base theme). -->
+    <style name="Theme.roomzy" parent="Base.Theme.roomzy" />
+
+    <!-- AppTheme for Light Mode (with Material Components theme) -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary color (used for app highlights, toolbars, etc.) -->
+        <item name="colorPrimary">#6200EE</item> <!-- Primary color (vibrant purple) -->
+
+        <!-- Primary variant (used for darker elements, such as the toolbar background) -->
+        <item name="colorPrimaryVariant">#3700B3</item> <!-- Darker shade of primary color -->
+
+        <!-- Text color on top of the primary color (used for buttons, text on primary backgrounds) -->
+        <item name="colorOnPrimary">@android:color/white</item> <!-- White text for contrast -->
+
+        <!-- Optionally add other colors -->
+        <item name="colorSecondary">#03DAC6</item> <!-- Secondary color (light teal) -->
+        <item name="colorOnSecondary">@android:color/black</item> <!-- Text color for secondary backgrounds -->
+    </style>
 </resources>

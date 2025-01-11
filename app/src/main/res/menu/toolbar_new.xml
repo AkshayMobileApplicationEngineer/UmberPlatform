@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        android:visible="false"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ring"
+        android:title="notifications"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
+
+
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_add"
+        android:title="Settings"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
+</menu>

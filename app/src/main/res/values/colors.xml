@@ -11,4 +11,12 @@
     <color name="non_photo_blue">#90e0ef</color>
     <color name="non_photos_blue">#ade8f4</color>
     <color name="light_cyan">#caf0f8</color>
+
+
+
+
+        <color name="colorPrimary">#6200EE</color>
+        <color name="gray">#808080</color>
+
+
 </resources>

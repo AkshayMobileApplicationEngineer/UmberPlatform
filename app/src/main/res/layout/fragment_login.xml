@@ -1,85 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_gravity="center_vertical"
-    android:padding="16dp"
-    tools:context=".fragment.LoginFragment">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@color/white">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login Page"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        />
-
-    <EditText
-        android:id="@+id/username"
+    <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
         android:layout_height="wrap_content"
-        android:hint="Username" />
+        tools:context=".fragment.LoginFragment"
+        android:padding="16dp">
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword" />
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/play_store_512"
+            android:contentDescription="string" />
 
-    <EditText
-        android:id="@+id/role"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Role" />
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoImage"
+            android:layout_marginTop="24dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="8dp" />
 
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login" />
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailField"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="8dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp">
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordField"
+            android:layout_marginTop="24dp"
+            android:text="Login"
+            android:backgroundTint="@color/vivid_sky_blue"
+            android:textColor="@color/white"
+            android:padding="12dp" />
 
+        <!-- Signup Link -->
         <TextView
-            android:id="@+id/signup"
+            android:id="@+id/signupText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:textColor="@android:color/holo_blue_light"
-            android:clickable="true"
-            android:layout_weight="1"
-            android:gravity="center" />
+            android:layout_below="@id/loginButton"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:text="Signup"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="14sp" />
 
+        <!-- Forgot Password Link -->
         <TextView
-            android:id="@+id/forget_password"
+            android:id="@+id/forgotPasswordText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forgot Password"
-            android:textColor="@android:color/holo_blue_light"
-            android:clickable="true"
-            android:layout_weight="1"
-            android:gravity="center" />
+            android:layout_below="@id/loginButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="14sp" />
 
+        <!-- Help Section -->
         <TextView
-            android:id="@+id/support"
+            android:id="@+id/helpText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Support"
-            android:textColor="@android:color/holo_blue_light"
-            android:clickable="true"
-            android:layout_weight="1"
-            android:gravity="center" />
-
-    </LinearLayout>
-
-</LinearLayout>
+            android:layout_below="@id/signupText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="Need help? Contact support."
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</ScrollView>

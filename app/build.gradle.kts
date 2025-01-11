@@ -2,10 +2,11 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("kotlin-kapt")
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.app.umberhouse"
+    namespace = "com.app.roomzy"
     compileSdk = 35
 
     buildFeatures {
@@ -13,7 +14,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.app.umberhouse"
+        applicationId = "com.app.roomzy"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -47,6 +48,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.database.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -61,6 +63,12 @@ dependencies {
 
 
     implementation ("com.github.bumptech.glide:glide:4.15.1")
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation("com.google.firebase:firebase-analytics")
+
+    implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")
+    implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
+   
 
 
 }
